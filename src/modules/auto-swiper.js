@@ -81,8 +81,7 @@
 		var element = $(this).parents(sels.element);
 
 		if (!element.data(DATA_KEY).allowClick) {
-			event.preventDefault();
-			event.stopImmediatePropagation();
+			window.pd(event, true);
 		}
 	};
 
